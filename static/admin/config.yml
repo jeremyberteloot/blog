@@ -1,5 +1,6 @@
 backend:
-  name: test-repo
+  name: blog
+  repo: jeremyberteloot/blog
 
 media_folder: static/assets
 public_folder: assets
