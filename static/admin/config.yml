@@ -1,5 +1,5 @@
 backend:
-  name: blog
+  name: github
   repo: jeremyberteloot/blog
 
 media_folder: static/assets
