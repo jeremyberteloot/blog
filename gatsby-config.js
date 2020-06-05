@@ -4,10 +4,10 @@ module.exports = {
     title: `Reactivity blog`,
     subtitle: `everything front-end`,
     author: `Jérémy Berteloot`,
-    description: `A starter personal blog with styled components, dark mode, and Netlify CMS.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    description: `A blog about front-end development`,
+    siteUrl: `https://reactivity.blog`,
     social: {
-      twitter: `kylemathews`,
+      twitter: ``,
     },
   },
   plugins: [
@@ -65,7 +65,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // edit below
-        // trackingId: `ADD YOUR TRACKING ID HERE`,
+        // trackingId: ``,
       },
     },
     {
