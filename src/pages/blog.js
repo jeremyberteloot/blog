@@ -11,10 +11,11 @@ class Blog extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
+    const siteSubTitle = data.site.siteMetadata.subtitle
     const posts = data.allMdx.edges
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout location={this.props.location} title={siteTitle} subtitle={siteSubTitle}>
         <SEO title="All posts" />
         <Bio />
         <div style={{ margin: "20px 0 40px" }}>
@@ -29,9 +30,9 @@ class Blog extends React.Component {
                 >
                   <Link
                     style={{ boxShadow: `none` }}
-                    to={`blog${node.fields.slug}`}
+                    to={`/blog${node.fields.slug}`}
                   >
-                    {title}
+                    {title} 
                   </Link>
                 </h3>
                 <small>{node.frontmatter.date}</small>
@@ -44,9 +45,6 @@ class Blog extends React.Component {
             )
           })}
         </div>
-        <Link to="/">
-          <Button marginTop="85px">Go Home</Button>
-        </Link>
       </Layout>
     )
   }
@@ -59,6 +57,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        subtitle
       }
     }
     allMdx(sort: { fields: [frontmatter___date], order: DESC }) {

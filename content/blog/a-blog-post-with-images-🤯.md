@@ -8,7 +8,7 @@ Hey can i use this ? 🍕🍖🥓🥕
 
 
 
-![It's me](assets/profile_pic.jpg "My profile picture")
+![It's me](/assets/profile_pic.jpg "My profile picture")
 
 Some text between
 
