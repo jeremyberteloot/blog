@@ -11,8 +11,8 @@ Mais il y a un cas de figure où centrer un élément sur la page peut encore ê
 
 ```css
 .wrapper {
-	position: relative;
-	width: 1000px;
+  position: relative;
+  width: 1000px;
 }
 
 .item {
@@ -28,8 +28,8 @@ En revanche, si on écris
 
 ```css
 .wrapper {
-	position: relative;
-	width: 1000px;
+  position: relative;
+  width: 1000px;
 }
 
 .item {
